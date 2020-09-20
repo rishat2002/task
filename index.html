@@ -9,38 +9,44 @@
  </head>
  <body>
 <div class="container">
-   <div class="header-from-pc-version">
     <header>
-        <nav><a href="" class="nav__icons nav__icons_burger"></a>
-        <div class="logo-group"></div>
-        <div class="divider"></div>
-        <a href="" class="nav__icons nav__icons_repair"></a>
-        <a href="" class="nav__icons nav__icons_checkstatus"></a>
-        </nav>
+        <ul class="burger-logo">
+        <li class="burger-logo__burger icon"><button></button></li>
+        <li class="burger-logo__logo-group"><img src="img/ic/Group.svg"></li>
+        </ul>
+        <ul class="feedback-list">
+        <li class="feedback-list__call icon"><button></button></li>
+        <li class="feedback-list__chat icon"><button></button></li>
+        <li class="feedback-list__profile icon"><a href="" ></a></li>    
+        </ul>
+        <ul class="serv-list">
+        <li class="serv-list__request icon"><a href=""></a></li>
+        <li class="serv-list__check-status icon"><a href=""></a></li>
+        </ul> 
     </header>
-    <div class="title">
-    <h1>Услуги и сервисы</h1></div>
-    </div>
-<div class="menu">
-    <a href="" class="menu__item">Ремонтируемые бренды</a>
-    <a href="" class="menu__item">Ремонтируемые устройства</a>
-    <a href="" class="menu__item">Цены на услуги</a>
-    <a href="" class="menu__item">Адреса сервисных центров</a>
-    <a href="" class="menu__item">Специальные цены</a>
-</div>
-<div class="reviews">Отзывы</div>
-<div class="tablet-and-pc-version">
+<main>
+    <h1 class="title">Услуги и сервисы</h1> 
+    <nav>
+    <ul class="menu">
+    <li class="menu__item active"><a href="">Ремонтируемые бренды</a></li>
+    <li class="menu__item"><a href="">Ремонтируемые устройства</a></li>
+    <li class="menu__item"><a href="">Цены на услуги</a></li>
+    <li class="menu__item"><a href="">Адреса сервисных центров</a></li>
+    <li class="menu__item"><a href="">Специальные цены</a></li>     
+    </ul> 
+    <span class="reviews">Отзывы</span>
+    </nav>
 <div class="info">
-<div class="info__text"><p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+<article class="info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
-Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-</div>
-<div class="info__read-more">
+Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+</article>
+<button class="info__read-more">
 <img src="img/ic/icon.svg">
-<p>Читать далее</p></div>
+<span>Читать далее</span></button>
 </div>
-<div><img class="main-image" src="img/_MG_3223.png" alt="">
-    </div></div>
-</div>
+<img class="main-image" src="img/Picture%20Copy.jpg" alt="">
+</main>
+    </div>
  </body>
 </html>
