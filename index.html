@@ -1,52 +1,69 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="css/style.css">
-  <title>Ремонт техники</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- </head>
- <body>
-<div class="container">
-    <header>
-        <ul class="burger-logo">
-        <li class="burger-logo__burger icon"><button></button></li>
-        <li class="burger-logo__logo-group"><img src="img/ic/Group.svg"></li>
-        </ul>
-        <ul class="feedback-list">
-        <li class="feedback-list__call icon"><button></button></li>
-        <li class="feedback-list__chat icon"><button></button></li>
-        <li class="feedback-list__profile icon"><a href="" ></a></li>    
-        </ul>
-        <ul class="serv-list">
-        <li class="serv-list__request icon"><a href=""></a></li>
-        <li class="serv-list__check-status icon"><a href=""></a></li>
-        </ul> 
-    </header>
-<main>
-    <h1 class="title">Услуги и сервисы</h1> 
-    <nav>
-    <ul class="menu">
-    <li class="menu__item active"><a href="">Ремонтируемые бренды</a></li>
-    <li class="menu__item"><a href="">Ремонтируемые устройства</a></li>
-    <li class="menu__item"><a href="">Цены на услуги</a></li>
-    <li class="menu__item"><a href="">Адреса сервисных центров</a></li>
-    <li class="menu__item"><a href="">Специальные цены</a></li>     
-    </ul> 
-    <span class="reviews">Отзывы</span>
-    </nav>
-<div class="info">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ремонт техники</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <ul class="header__burger-logo">
+                <li class="burger-logo__item">
+                    <button class="logo__item--burger icon"></button>
+                </li>
+                <li class="burger-logo__item">
+                    <div class="logo__item--logo-group"><img src="img/ic/Group.svg"></div>
+                </li>
+            </ul>
+            <ul class="header__feedback-list">
+                <li class="feedback-list__item">
+                    <button class="feedback-list__item--call icon"></button>
+                </li>
+                <li class="feedback-list__item">
+                    <button class="feedback-list__item--chat icon"></button>
+                </li>
+                <li class="feedback-list__item">
+                    <div><a href="" class="feedback-list__item--profile icon"></a></div>
+                </li>
+            </ul>
+            <ul class="header__serv-list">
+                <li class="serv-list__item">
+                    <div><a href="" class="serv-list__item--request icon"></a></div>
+                </li>
+                <li class="serv-list__item">
+                    <div><a href="" class="serv-list__item--check-status icon"></a></div>
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1 class="main__title title">Услуги и сервисы</h1>
+            <nav class="main__nav">
+                <ul class="nav__menu">
+                    <li class="menu__item active"><a href="">Ремонтируемые бренды</a></li>
+                    <li class="menu__item"><a href="">Ремонтируемые устройства</a></li>
+                    <li class="menu__item"><a href="">Цены на услуги</a></li>
+                    <li class="menu__item"><a href="">Адреса сервисных центров</a></li>
+                    <li class="menu__item"><a href="">Специальные цены</a></li>
+                </ul>
+                <a class="nav__reviews" href="">Отзывы</a>
+            </nav>
+            <div class="main__info">
 <article class="info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-</article>
-<button class="info__read-more">
-<img src="img/ic/icon.svg">
-<span>Читать далее</span></button>
-</div>
-<img class="main-image" src="img/Picture%20Copy.jpg" alt="">
-</main>
+                </article>
+                <button class="info__read-more">
+                    <img src="img/ic/icon.svg" class="read-more__icon">
+                    <span class="read-more__name">Читать далее</span></button>
+            </div>
+            <img class="main__content-image" src="img/Picture%20Copy.jpg" alt="">
+        </main>
     </div>
- </body>
+</body>
+
 </html>
