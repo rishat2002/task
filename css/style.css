@@ -13,11 +13,12 @@ html {
 body {
     font-family: 'TT Lakes';
     background-color: #F8F8F8;
+    min-width: 320px;
 }
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/fonts/TTLakes-Regular.eot');
+    src: url('.fonts/TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
         url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
         url('fonts/TTLakes-Regular.woff') format('woff'),
@@ -54,14 +55,14 @@ a {
     height: 88px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-bottom: 1px solid #D9FFF5;
     padding: 0 16px 0 16px;
     flex-wrap: wrap;
     background: white;
 }
 
-.header ul {
+ul {
     list-style: none;
     display: flex;
     height: inherit;
@@ -74,32 +75,29 @@ button,button:active{
     outline: none;
 }
 
+.ui-button {
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
 a:hover,button:hover {
     opacity: 0.7;
 }
 
-.header__burger-logo {
-    position: relative;
-}
-
-.header__burger-logo li {
+.header__button-burger{
     margin-right: 16px;
 }
 
-.logo__item--burger {
+.ui-button--burger {
     background: url("../img/ic/burger.svg") no-repeat;
 }
 
-.logo__item--logo-group {
-    width: 97px;
-    height: 51px;
-}
-
-.header__burger-logo li:last-child:after {
+.header__logo:after {
     content: " ";
     position: absolute;
     top: 28px;
-    right: 0;
+    left: 186px;
     display: block;
     width: 2px;
     height: 32px;
@@ -107,53 +105,52 @@ a:hover,button:hover {
     border-radius: 1px;
 }
 
-.header .header__feedback-list {
+.header .feedback-list {
     display: none;
 }
 
-.feedback-list__item--call {
+.ui-button--call{
     background: url("../img/ic/chat%20copy.svg") no-repeat;
 }
 
-.feedback-list__item--chat {
+.ui-button--chat {
     background: url("../img/ic/chat.svg") no-repeat;
 }
 
-.feedback-list__item--profile {
+.ui-button--profile {
     background: url("../img/ic/profile.svg") no-repeat;
 }
+.header__serv-list{
+    margin-left: auto;
+}
 
-.header__serv-list li:last-child {
+.serv-list__item:last-child {
     margin-left: 16px;
 }
 
-.serv-list__item--request {
+.ui-button--request {
     background: url("../img/ic/repair.svg") no-repeat;
 }
 
-.serv-list__item--check-status {
+.ui-button--check-status {
     background: url("../img/ic/checkstatus.svg") no-repeat;
 }
 
-.icon {
-    display: block;
-    height: 40px;
-    width: 40px;
-}
 .title {
     position: relative;
-    margin-top: 24px;
-    margin-bottom: 24px;
     height: 40px;
     width: 100%;
-    margin-left: 16px;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
     font-weight: bold;
     color: #1B1C21;
 }
-
+.main__title{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
 .title:before {
     position: absolute;
     content: "";
@@ -162,18 +159,16 @@ a:hover,button:hover {
     left: -16px;
 }
 
-.nav__menu {
+.menu {
     width: 100%;
     display: flex;
-    height: 40px;
     justify-content: space-between;
     margin-bottom: 24px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
-
-.menu__item {
-    display: flex;
+.menu__item-link{
+  display: flex;
     align-items: center;
     font-size: 16px;
     line-height: 24px;
@@ -183,9 +178,8 @@ a:hover,button:hover {
     height: 40px;
     padding-left: 15px;
     padding-right: 15px;
-    white-space: nowrap;
+    white-space: nowrap;   
 }
-
 .menu__item:first-child {
     margin-left: 16px;
 }
@@ -194,14 +188,17 @@ a:hover,button:hover {
     margin-right: 16px;
 }
 
-.menu__item:active {
+.menu__item-link:active {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: white;
 }
-
-.info__text {
-    white-space: pre-wrap;
+.menu__item--active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+.info-text {
+    white-space:normal;
     width: 100%;
     font-size: 14px;
     color: #1B1C21;
@@ -212,9 +209,7 @@ a:hover,button:hover {
     overflow: hidden;
 }
 
-.info__read-more {
-    background-color: #F8F8F8;
-    margin: 16px 24px;
+.button-read-more {
     display: flex;
     font-size: 16px;
     line-height: 24px;
@@ -222,30 +217,26 @@ a:hover,button:hover {
     color: #1B1C21;
     font-weight: 500;
     align-items: center;
+    background-color: #F8F8F8;
 }
-
-.read-more__icon {
+.info__button{
+     margin: 16px 24px;
+}
+.info__icon {
     margin-right: 16px;
 }
 
-.info__read-more__name {
+.info__name {
     margin-left: 10px;
 }
 
-.main__content-image {
+.content-image {
+    height: 100%;
     width: 100%;
-    max-width: 450px;
-    height: 176px;
+    max-height: 500px;
+    max-width: 800px;
 }
 
-.nav__reviews {
-    display: none;
-}
-
-.active {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-}
 
 @media screen and (min-width: 767px) {
     .container {
@@ -273,25 +264,23 @@ a:hover,button:hover {
         flex-wrap: wrap;
     }
 
-    .main__nav {
-        justify-content: flex-start;
-    }
-
     .nav__menu {
+        justify-content: flex-start;
         margin-bottom: 32px;
-        overflow-x: scroll;
-        overflow-y: hidden;
     }
 
     .menu__item:first-child {
-        margin-left: 0px;
-    }
+    margin-left: 0px;
+   }
 
+   .menu__item:last-child {
+    margin-right: 0px;
+   }
     .header__burger-logo li:first-child {
         margin-right: 42px;
     }
 
-    .header .header__feedback-list {
+    .header .feedback-list {
         display: flex;
         align-items: center;
         margin-left: auto;
@@ -304,6 +293,8 @@ a:hover,button:hover {
 
     .header__serv-list {
         position: relative;
+        margin-left: 0px;
+        margin-right: 24px;
     }
 
     .header__serv-list li:first-child:before {
@@ -318,12 +309,12 @@ a:hover,button:hover {
         left:-20px;
     }
 
-    .title {
+    .main__title {
         margin-bottom: 32px;
         margin-left: -8px;
     }
 
-    .info__text {
+    .info-text {
         white-space: pre-wrap;
         width: 312px;
         font-size: 14px;
@@ -354,29 +345,40 @@ a:hover,button:hover {
         z-index: 10;
     }
     .main {
+        width: 100%;
         padding-left: 32px;
         padding-right: 32px;
     }
     .container {
         margin: 0 auto;
     }
+
+    .header .ui-button--burger {
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .header .feedback-list {
+        display: none;
+    }
+    
     .nav__menu {
-        margin-bottom: 0px;
-         overflow: auto;
-    }
-    .header .header__burger-logo {
-        display: none;
-    }
-
-    .header .header__feedback-list {
-        display: none;
-    }
-
-    .main__nav {
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 100%;
+        flex-wrap: wrap;
+        margin-top: -8px;
+        width: 100%;
+        margin-bottom: 0px;
+        overflow:hidden;
     }
-
+    .menu__item-link{
+        margin-top: 8px;
+    }
+    
+    .nav{
+        width:100%;
+    }
     .header__serv-list li:last-child {
         margin-left: 160px;
         margin-right: 32px;
@@ -405,23 +407,15 @@ a:hover,button:hover {
         top:0px;
         left:-135px;
     }
-    .nav__reviews {
-    margin: 14px auto 19px 56px;
-    font-size: 16px;
-    color: #7E7E82;
-    position: relative;
-    display: block;
-    }
-    .title {
+    
+    .main__title {
         margin-bottom: 8px;
         margin-top: 42px;
         margin-left: -16px;
     }
-
-    .menu__item:first-child {
-        margin-left: 0px;
+    .main__info{
+        margin-top: 9px;
     }
-
     .info__text {
         white-space: pre-wrap;
         width: 490px;
@@ -436,5 +430,10 @@ a:hover,button:hover {
     .main__content-image {
         width: 532px;
         height: 307px;
+        margin-top: 9px;
     }
+    .menu__item-link{
+    padding-left: 22px;
+    padding-right: 22px;  
+}
 }

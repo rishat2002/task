@@ -12,56 +12,50 @@
 <body>
     <div class="container">
         <header class="header">
-            <ul class="header__burger-logo">
-                <li class="burger-logo__item">
-                    <button class="logo__item--burger icon"></button>
-                </li>
-                <li class="burger-logo__item">
-                    <div class="logo__item--logo-group"><img src="img/ic/Group.svg"></div>
-                </li>
-            </ul>
-            <ul class="header__feedback-list">
+                <button class="ui-button ui-button--burger header__button-burger"></button>
+                <div class="header__logo logo"><a href="" class="logo__link"><img src="img/ic/Group.svg" alt="Логотип" class="logo__img"></a></div>
+            <ul class="header__feedback-list feedback-list">
                 <li class="feedback-list__item">
-                    <button class="feedback-list__item--call icon"></button>
+                    <button class="ui-button--call ui-button feedback-list__button"></button>
                 </li>
                 <li class="feedback-list__item">
-                    <button class="feedback-list__item--chat icon"></button>
+                    <button class="ui-button--chat ui-button feedback-list__button"></button>
                 </li>
                 <li class="feedback-list__item">
-                    <div><a href="" class="feedback-list__item--profile icon"></a></div>
+                    <div><a href="" class="ui-button--profile ui-button feedback-list__button"></a></div>
                 </li>
-            </ul>
-            <ul class="header__serv-list">
+                </ul>
+            <ul class="header__serv-list serv-list">
                 <li class="serv-list__item">
-                    <div><a href="" class="serv-list__item--request icon"></a></div>
+                    <div><a href="" class="ui-button--request ui-button serv-list__button"></a></div>
                 </li>
                 <li class="serv-list__item">
-                    <div><a href="" class="serv-list__item--check-status icon"></a></div>
+                    <div><a href="" class="ui-button--check-status ui-button serv-list__button"></a></div>
                 </li>
             </ul>
         </header>
         <main class="main">
             <h1 class="main__title title">Услуги и сервисы</h1>
-            <nav class="main__nav">
-                <ul class="nav__menu">
-                    <li class="menu__item active"><a href="">Ремонтируемые бренды</a></li>
-                    <li class="menu__item"><a href="">Ремонтируемые устройства</a></li>
-                    <li class="menu__item"><a href="">Цены на услуги</a></li>
-                    <li class="menu__item"><a href="">Адреса сервисных центров</a></li>
-                    <li class="menu__item"><a href="">Специальные цены</a></li>
+            <nav class="main__nav nav">
+                <ul class="nav__menu menu">
+                    <li class="menu__item"><a class="menu__item-link menu__item--active" href="">Ремонтируемые бренды</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="">Ремонтируемые устройства</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="">Цены на услуги</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="">Адреса сервисных центров</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="">Специальные цены</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="">Отзывы</a></li>
                 </ul>
-                <a class="nav__reviews" href="">Отзывы</a>
             </nav>
-            <div class="main__info">
-<article class="info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            <div class="main__info info">
+<article class="info-text info__item">Мы являемся авторизованным  сервисным центром по ремонту техники Dell. Только у нас вы можете   отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                 </article>
-                <button class="info__read-more">
-                    <img src="img/ic/icon.svg" class="read-more__icon">
-                    <span class="read-more__name">Читать далее</span></button>
+                <button class="button-read-more info__button">
+                    <img src="img/ic/icon.svg" class="info__icon button-icon" alt=" ">
+                    <span class="info__name">Читать далее</span></button>
             </div>
-            <img class="main__content-image" src="img/Picture%20Copy.jpg" alt="">
+            <img class="main__content-image content-image" src="img/Picture%20Copy.jpg" alt="">
         </main>
     </div>
 </body>
