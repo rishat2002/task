@@ -139,7 +139,6 @@ a:hover,button:hover {
 .title {
     position: relative;
     height: 40px;
-    width: 100%;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -158,12 +157,13 @@ a:hover,button:hover {
     height: 100%;
     left: -16px;
 }
-
+.nav__menu{
+    margin-bottom: 24px;
+}
 .menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -196,6 +196,7 @@ a:hover,button:hover {
 .menu__item--active {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
+    background-color: white;
 }
 .info-text {
     white-space:normal;
@@ -208,7 +209,16 @@ a:hover,button:hover {
     line-height: 18px;
     overflow: hidden;
 }
-
+.button{
+    display: flex;
+    align-items: center; 
+}
+.text{
+    display: none;
+}
+.button__text{
+    margin-right: 8px;
+}
 .button-read-more {
     display: flex;
     font-size: 16px;
@@ -239,12 +249,7 @@ a:hover,button:hover {
 
 
 @media screen and (min-width: 767px) {
-    .container {
-        margin: 0 auto;
-    }
-    body{
-        overflow-x: hidden;
-    }
+   
     .header__burger-logo li:last-child:after {
         content: " ";
         position: absolute;
@@ -260,10 +265,13 @@ a:hover,button:hover {
     .main {
         padding-left: 24px;
         padding-right: 40px;
-        display: flex;
-        flex-wrap: wrap;
     }
-
+   
+    .info{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
     .nav__menu {
         justify-content: flex-start;
         margin-bottom: 32px;
@@ -325,7 +333,7 @@ a:hover,button:hover {
         overflow: hidden;
     }
 
-    .main__content-image {
+    .content-image {
         width: 360px;
         height: 208px;
         margin-left: auto;
@@ -338,7 +346,7 @@ a:hover,button:hover {
         background-color: inherit;
         position: absolute;
         height: 40px;
-        margin: 42px 0px 8px auto;
+        margin: 0px 0px 8px auto;
         justify-content: flex-end;
         border-bottom: none;
         padding-right:0px;
@@ -352,7 +360,10 @@ a:hover,button:hover {
     .container {
         margin: 0 auto;
     }
-
+    .menu{
+        max-width: 1400px;
+        overflow: hidden;
+    }
     .header .ui-button--burger {
         display: none;
     }
@@ -362,7 +373,9 @@ a:hover,button:hover {
     .header .feedback-list {
         display: none;
     }
-    
+    .text{
+        display: block;
+    }
     .nav__menu {
         justify-content: flex-start;
         width: 100%;
@@ -380,32 +393,12 @@ a:hover,button:hover {
         width:100%;
     }
     .header__serv-list li:last-child {
-        margin-left: 160px;
+        margin-left: 32px;
         margin-right: 32px;
     }
 
-    .header__serv-list li:last-child:before {
-        display: flex;
-        content: "Статус ремонта";
-        position: absolute;
-        background: none;
-        font-size: 16px;
-        align-items: center;
-        white-space: nowrap;
-        height: 40px;
-        right: 80px;
-    }
     .header__serv-list li:first-child:before {
-        display: flex;
-        content: "Оставить заявку";
-        position: absolute;
-        background: none;
-        font-size: 16px;
-        white-space: nowrap;
-        align-items: center;
-        height: 40px;
-        top:0px;
-        left:-135px;
+        display: none;
     }
     
     .main__title {
